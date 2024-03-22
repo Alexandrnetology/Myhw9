@@ -3,7 +3,7 @@ package ru.netology.radio;
 public class Radio {
     public int numberRadiostation;
 
-    public int getNumberRadiostation() {
+    public int getNumberRadioStation() {
         return numberRadiostation;
     }
 

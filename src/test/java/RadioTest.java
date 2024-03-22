@@ -5,7 +5,18 @@ import ru.netology.radio.Radio;
 public class RadioTest {
 
     @Test
-    public void shouldSetRadiostation() {
+    public void shouldNumberStation() {
+        Radio rad = new Radio();
+        rad.numberRadiostation = 0;
+        rad.getNumberRadioStation();
+        int expected = 0;
+        int actual = rad.getNumberRadioStation();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldSetRadioStation() {
         Radio rad = new Radio();
         rad.numberRadiostation = 6;
         int expected = 6;
@@ -15,7 +26,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldNextRadiostation() {
+    public void shouldNextRadioStation() {
         Radio rad = new Radio();
         rad.numberRadiostation = 6;
         rad.nextRadiostation();
@@ -26,7 +37,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldPrevRadiostation() {
+    public void shouldPrevRadioStation() {
         Radio rad = new Radio();
         rad.numberRadiostation = 9;
         rad.prevRadiostation();
@@ -37,7 +48,7 @@ public class RadioTest {
     }
 
     @Test
-    public void minRadiostation() {
+    public void minRadioStation() {
         Radio rad = new Radio();
         rad.numberRadiostation = 0;
         rad.prevRadiostation();
@@ -49,7 +60,7 @@ public class RadioTest {
     }
 
     @Test
-    public void maxRadiostation() {
+    public void maxRadioStation() {
         Radio rad = new Radio();
         rad.numberRadiostation = 9;
         rad.nextRadiostation();
