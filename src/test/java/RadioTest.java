@@ -4,18 +4,19 @@ import ru.netology.radio.Radio;
 
 public class RadioTest {
 
-@Test
-        public  void shouldGetCurrentStation () {
-    Radio radio = new Radio();
+    @Test
+    public void shouldGetCurrentStation() {
+        Radio radio = new Radio();
 
-    radio.setCurrentStation(5);
-    int expected = 5;
-    int actual = radio.getCurrentStation();
+        radio.setCurrentStation(5);
+        int expected = 5;
+        int actual = radio.getCurrentStation();
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void shouldGetCurrentStationMinZero () {
+    public void shouldGetCurrentStationMinZero() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(-1);
@@ -24,8 +25,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void shouldGetCurrentStationZero () {
+    public void shouldGetCurrentStationZero() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(0);
@@ -34,8 +36,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void shouldGetCurrentStationMaxZero () {
+    public void shouldGetCurrentStationMaxZero() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(1);
@@ -44,8 +47,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void shouldGetCurrentStationMaxNine () {
+    public void shouldGetCurrentStationMaxNine() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(10);
@@ -54,8 +58,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void shouldGetCurrentStationNine () {
+    public void shouldGetCurrentStationNine() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(9);
@@ -64,8 +69,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void shouldGetCurrentStationMinNine () {
+    public void shouldGetCurrentStationMinNine() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(8);
@@ -76,7 +82,7 @@ public class RadioTest {
     }
 
     @Test
-    public  void shouldGetCurrentVolume () {
+    public void shouldGetCurrentVolume() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(45);
@@ -85,8 +91,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void shouldGetCurrentVolumeMinZero () {
+    public void shouldGetCurrentVolumeMinZero() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(-1);
@@ -95,8 +102,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void shouldGetCurrentVolumeZero () {
+    public void shouldGetCurrentVolumeZero() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(0);
@@ -105,8 +113,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void shouldGetCurrentVolumeMaxZero () {
+    public void shouldGetCurrentVolumeMaxZero() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(1);
@@ -115,8 +124,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void shouldGetCurrentVolumeMaxHandrid () {
+    public void shouldGetCurrentVolumeMaxHandrid() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(101);
@@ -125,8 +135,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void shouldGetCurrentVolumeHandrid () {
+    public void shouldGetCurrentVolumeHandrid() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(100);
@@ -135,8 +146,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void shouldGetCurrentStationMinHandrid () {
+    public void shouldGetCurrentStationMinHandrid() {
         Radio radio = new Radio();
 
         radio.setCurrentVolume(99);
@@ -145,8 +157,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void shouldNextCurrentStationZero () {
+    public void shouldNextCurrentStationZero() {
         Radio radio = new Radio();
         radio.setCurrentStation(0);
         radio.nextStation();
@@ -156,8 +169,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void shouldNextCurrentStationEght () {
+    public void shouldNextCurrentStationEght() {
         Radio radio = new Radio();
         radio.setCurrentStation(8);
         radio.nextStation();
@@ -167,8 +181,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void shouldNextCurrentStationNine () {
+    public void shouldNextCurrentStationNine() {
         Radio radio = new Radio();
         radio.setCurrentStation(9);
         radio.nextStation();
@@ -178,8 +193,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void shouldNextCurrentStation () {
+    public void shouldNextCurrentStation() {
         Radio radio = new Radio();
         radio.setCurrentStation(5);
         radio.nextStation();
@@ -189,8 +205,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void shouldNextCurrentStationOne () {
+    public void shouldNextCurrentStationOne() {
         Radio radio = new Radio();
         radio.setCurrentStation(1);
         radio.nextStation();
@@ -202,7 +219,7 @@ public class RadioTest {
     }
 
     @Test
-    public  void shouldPrevCurrentStationOne () {
+    public void shouldPrevCurrentStationOne() {
         Radio radio = new Radio();
         radio.setCurrentStation(1);
         radio.prevStation();
@@ -212,8 +229,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void shouldPrevCurrentStationZero () {
+    public void shouldPrevCurrentStationZero() {
         Radio radio = new Radio();
         radio.setCurrentStation(0);
         radio.prevStation();
@@ -223,8 +241,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void shouldPrevCurrentStationNine () {
+    public void shouldPrevCurrentStationNine() {
         Radio radio = new Radio();
         radio.setCurrentStation(9);
         radio.prevStation();
@@ -234,8 +253,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void shouldPrevCurrentStation () {
+    public void shouldPrevCurrentStation() {
         Radio radio = new Radio();
         radio.setCurrentStation(5);
         radio.prevStation();
@@ -245,8 +265,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public  void shouldPrevCurrentStationEght () {
+    public void shouldPrevCurrentStationEght() {
         Radio radio = new Radio();
         radio.setCurrentStation(8);
         radio.prevStation();
@@ -259,7 +280,7 @@ public class RadioTest {
 
 
     @Test
-    public  void shouldPlusCurrentVolume () {
+    public void shouldPlusCurrentVolume() {
         Radio radio = new Radio();
         radio.setCurrentVolume(45);
         radio.plusVolume();
@@ -271,7 +292,7 @@ public class RadioTest {
     }
 
     @Test
-    public  void shouldPlusCurrentVolumeZero () {
+    public void shouldPlusCurrentVolumeZero() {
         Radio radio = new Radio();
         radio.setCurrentVolume(0);
         radio.plusVolume();
@@ -283,7 +304,7 @@ public class RadioTest {
     }
 
     @Test
-    public  void shouldPlusCurrentVolumeMinHandrid () {
+    public void shouldPlusCurrentVolumeMinHandrid() {
         Radio radio = new Radio();
         radio.setCurrentVolume(99);
         radio.plusVolume();
@@ -295,7 +316,7 @@ public class RadioTest {
     }
 
     @Test
-    public  void shouldPlusCurrentVolumeHandrid () {
+    public void shouldPlusCurrentVolumeHandrid() {
         Radio radio = new Radio();
         radio.setCurrentVolume(100);
         radio.plusVolume();
@@ -307,9 +328,8 @@ public class RadioTest {
     }
 
 
-
     @Test
-    public  void shouldMinusCurrentVolume () {
+    public void shouldMinusCurrentVolume() {
         Radio radio = new Radio();
         radio.setCurrentVolume(45);
         radio.minusVolume();
@@ -321,7 +341,7 @@ public class RadioTest {
     }
 
     @Test
-    public  void shouldMinusCurrentVolumeMinZero () {
+    public void shouldMinusCurrentVolumeMinZero() {
         Radio radio = new Radio();
         radio.setCurrentVolume(0);
         radio.minusVolume();
@@ -333,7 +353,7 @@ public class RadioTest {
     }
 
     @Test
-    public  void shouldMinusCurrentVolumeOne () {
+    public void shouldMinusCurrentVolumeOne() {
         Radio radio = new Radio();
         radio.setCurrentVolume(1);
         radio.minusVolume();
@@ -345,7 +365,7 @@ public class RadioTest {
     }
 
     @Test
-    public  void shouldMinusCurrentVolumeHandrid () {
+    public void shouldMinusCurrentVolumeHandrid() {
         Radio radio = new Radio();
         radio.setCurrentVolume(100);
         radio.minusVolume();
@@ -357,9 +377,8 @@ public class RadioTest {
     }
 
 
-
     @Test
-    public  void maxStation () {
+    public void maxStation() {
         Radio radio = new Radio(10);
 
         radio.setCurrentStation(9);
